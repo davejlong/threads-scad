@@ -596,7 +596,7 @@ module MetricBoltSet(diameter, length, quantity=1) {
 }
 
 
-module Demo() {
+module ThreadsDemo() {
   translate([0,-0,0]) MetricBoltSet(3, 8);
   translate([0,-20,0]) MetricBoltSet(4, 8);
   translate([0,-40,0]) MetricBoltSet(5, 8);
@@ -624,9 +624,3 @@ module Demo() {
       translate([-4, -9, 0]) cube([8, 18, 6]);
     }
 }
-
-
-Demo();
-
-//MetricBoltSet(6, 8, 10);
-
